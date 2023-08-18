@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(83, 83, 173);
+        }
+        h1{
+            color:aliceblue;
+            text-align:center ;
+            margin-top: 200px;
+            
+        }
+        img{
+            margin-left:600px;
+        }
+        #on{
+            color:yellow;
+            padding: 2px 2px 2px 2px;
+            margin-left:600px;
+            background-color: black;
+        }
+        #off{
+            color:yellow;
+            margin-left:100px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Can you turn on the light</h1>
+    <img src="lighton.jfif" id="onimg">
+    <br>
+    
+    <button id="on" onclick="onlight()">Turn on Light</button>
+
+    <button id="off" onclick="offlight()">Turn off Light</button>
+    <script>
+        function onlight()
+        {
+            document.getElementById('onimg').src="lightoff.jfif" ;
+        }
+        function offlight()
+        {
+            document.getElementById('onimg').src="lighton.jfif" ;
+        }
+    </script>
+    
+</body>
+</html>
